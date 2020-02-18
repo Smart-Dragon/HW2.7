@@ -56,15 +56,31 @@
 		9BAD8CDC23FC7C7300DCE0AE /* HW2.7 */ = {
 			isa = PBXGroup;
 			children = (
+				9BAD8CF223FC7CD000DCE0AE /* Storyboards */,
+				9BAD8CF123FC7CBE00DCE0AE /* ViewControllers */,
 				9BAD8CDD23FC7C7300DCE0AE /* AppDelegate.swift */,
 				9BAD8CDF23FC7C7300DCE0AE /* SceneDelegate.swift */,
-				9BAD8CE123FC7C7300DCE0AE /* ViewController.swift */,
-				9BAD8CE323FC7C7300DCE0AE /* Main.storyboard */,
 				9BAD8CE623FC7C7700DCE0AE /* Assets.xcassets */,
-				9BAD8CE823FC7C7700DCE0AE /* LaunchScreen.storyboard */,
 				9BAD8CEB23FC7C7700DCE0AE /* Info.plist */,
 			);
 			path = HW2.7;
+			sourceTree = "<group>";
+		};
+		9BAD8CF123FC7CBE00DCE0AE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9BAD8CE123FC7C7300DCE0AE /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9BAD8CF223FC7CD000DCE0AE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9BAD8CE323FC7C7300DCE0AE /* Main.storyboard */,
+				9BAD8CE823FC7C7700DCE0AE /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,7 +309,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.smartdragon.HW2-7";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +326,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.smartdragon.HW2-7";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
