@@ -28,13 +28,13 @@
         <!--Persons List-->
         <scene sceneID="EP2-m4-ylG">
             <objects>
-                <tableViewController id="qXE-Ji-bMt" sceneMemberID="viewController">
+                <tableViewController id="qXE-Ji-bMt" customClass="PersonListOneViewController" customModule="HW2_7" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="oci-gK-ZTc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="M5l-xX-fBm" style="IBUITableViewCellStyleDefault" id="XPa-xG-kfs">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="personCell" textLabel="M5l-xX-fBm" style="IBUITableViewCellStyleDefault" id="XPa-xG-kfs">
                                 <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XPa-xG-kfs" id="7hh-TU-GUB">
@@ -51,7 +51,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="kae-X2-fdi" kind="show" id="9j7-ib-dU4"/>
+                                    <segue destination="kae-X2-fdi" kind="show" identifier="personDetail" id="9j7-ib-dU4"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -66,10 +66,10 @@
             </objects>
             <point key="canvasLocation" x="2026" y="115"/>
         </scene>
-        <!--View Controller-->
+        <!--Person Detail View Controller-->
         <scene sceneID="YUE-K7-QqX">
             <objects>
-                <viewController id="kae-X2-fdi" sceneMemberID="viewController">
+                <viewController id="kae-X2-fdi" customClass="PersonDetailViewController" customModule="HW2_7" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jKk-ue-bSw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -131,6 +131,11 @@
                         <viewLayoutGuide key="safeArea" id="Mak-BI-5MW"/>
                     </view>
                     <navigationItem key="navigationItem" id="E8J-yh-0oc"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="mkV-ks-fqX" id="M5h-OC-G4B"/>
+                        <outlet property="fullNameLabel" destination="Yed-As-Afp" id="RmY-S0-1XQ"/>
+                        <outlet property="phoneLabel" destination="jMu-uh-CH3" id="Ax6-nw-evw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rpj-ed-gRy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -139,18 +144,27 @@
         <!--Persons List 2-->
         <scene sceneID="Y9n-TK-RyG">
             <objects>
-                <tableViewController id="hE2-ou-H44" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="YcC-TO-cOT">
+                <tableViewController id="hE2-ou-H44" customClass="PersonListTwoViewController" customModule="HW2_7" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="40" sectionFooterHeight="28" id="YcC-TO-cOT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Qrc-ha-hnG">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="personCell" textLabel="QbZ-2d-UGo" style="IBUITableViewCellStyleDefault" id="Qrc-ha-hnG">
                                 <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qrc-ha-hnG" id="DJS-X1-gLJ">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QbZ-2d-UGo">
+                                            <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
