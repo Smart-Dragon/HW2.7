@@ -74,8 +74,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yed-As-Afp">
-                                <rect key="frame" x="146.5" y="64" width="82.5" height="42"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yed-As-Afp">
+                                <rect key="frame" x="20" y="64" width="335" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -125,7 +125,8 @@
                             <constraint firstItem="Mak-BI-5MW" firstAttribute="trailing" secondItem="Xhs-hd-H1l" secondAttribute="trailing" constant="20" id="1l3-yF-iql"/>
                             <constraint firstItem="Xhs-hd-H1l" firstAttribute="leading" secondItem="Mak-BI-5MW" secondAttribute="leading" constant="20" id="BVf-zL-X90"/>
                             <constraint firstItem="Yed-As-Afp" firstAttribute="top" secondItem="Mak-BI-5MW" secondAttribute="top" constant="20" id="Nmr-MN-irG"/>
-                            <constraint firstItem="Yed-As-Afp" firstAttribute="centerX" secondItem="jKk-ue-bSw" secondAttribute="centerX" id="r5U-jO-1sV"/>
+                            <constraint firstItem="Mak-BI-5MW" firstAttribute="trailing" secondItem="Yed-As-Afp" secondAttribute="trailing" constant="20" id="dhl-du-roe"/>
+                            <constraint firstItem="Yed-As-Afp" firstAttribute="leading" secondItem="Mak-BI-5MW" secondAttribute="leading" constant="20" id="gNk-Ii-TRx"/>
                             <constraint firstItem="Xhs-hd-H1l" firstAttribute="top" secondItem="Yed-As-Afp" secondAttribute="bottom" constant="40" id="vJc-AU-Dwb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Mak-BI-5MW"/>

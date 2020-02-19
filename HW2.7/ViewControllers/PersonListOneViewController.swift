@@ -13,7 +13,10 @@ class PersonListOneViewController: UITableViewController {
     // MARK: - Public Properties
     
     var persons = Person.getPersons()
-    let personDetailSegue = "personDetail"
+    
+    // MARK: - Private Properties
+    
+    private let personDetailSegue = "personDetail"
 
     // MARK: - Table view data source
 

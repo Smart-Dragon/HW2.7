@@ -39,7 +39,7 @@ extension Person {
         return persons
     }
     
-    static func getSurnames() -> [String] {
+    private static func getSurnames() -> [String] {
         [
             "Ivanov",
             "Petrov",
@@ -51,7 +51,7 @@ extension Person {
         ]
     }
     
-    static func getNames() -> [String] {
+    private static func getNames() -> [String] {
         [
             "Aleksei",
             "Ivan",
@@ -63,7 +63,7 @@ extension Person {
         ]
     }
     
-    static func getEmails() -> [String] {
+    private static func getEmails() -> [String] {
         [
             "one@gmail.com",
             "two@gmail.com",
@@ -75,7 +75,7 @@ extension Person {
         ]
     }
     
-    static func getPhones() -> [String] {
+    private static func getPhones() -> [String] {
         [
             "+7-999-111-11-11",
             "+7-999-111-11-22",
